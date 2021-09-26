@@ -1,0 +1,6 @@
+{
+	"name": "STEPS-OnPrem",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
