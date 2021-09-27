@@ -1,0 +1,117 @@
+{
+	"name": "AzureSqlTablepitstops",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "PITSTOPS_Azure",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "ActivityName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TaskNo",
+				"type": "real",
+				"precision": 7
+			},
+			{
+				"name": "PlanStart",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "PlanFinish",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "ActualStart",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "ActualFinish",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "WCSIndicator",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Note",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PendingStatus",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Remarks",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ProgressPercent",
+				"type": "decimal",
+				"precision": 5,
+				"scale": 2
+			},
+			{
+				"name": "Weightage",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 3
+			},
+			{
+				"name": "Group",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TANO",
+				"type": "nvarchar"
+			},
+			{
+				"name": "WorklistID",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "IsDeleted",
+				"type": "bit"
+			},
+			{
+				"name": "CreatedDate",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "CreatedBy",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "ModifiedDate",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "ModifiedBy",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "PhaseID",
+				"type": "uniqueidentifier"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "TasklistTestADF"
+		}
+	}
+}

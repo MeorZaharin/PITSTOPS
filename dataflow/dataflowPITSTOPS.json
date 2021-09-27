@@ -1,0 +1,20 @@
+{
+	"name": "dataflowPITSTOPS",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "AzureSqlTablepitstops",
+						"type": "DatasetReference"
+					},
+					"name": "PITSTOPS"
+				}
+			],
+			"sinks": [],
+			"transformations": [],
+			"script": "source(output(\n\t\tID as string,\n\t\tActivityName as string,\n\t\tTaskNo as float,\n\t\tPlanStart as timestamp,\n\t\tPlanFinish as timestamp,\n\t\tActualStart as timestamp,\n\t\tActualFinish as timestamp,\n\t\tWCSIndicator as string,\n\t\tNote as string,\n\t\tPendingStatus as integer,\n\t\tRemarks as string,\n\t\tProgressPercent as decimal(5,2),\n\t\tWeightage as decimal(10,3),\n\t\tGroup as string,\n\t\tTANO as string,\n\t\tWorklistID as string,\n\t\tIsDeleted as boolean,\n\t\tCreatedDate as timestamp,\n\t\tCreatedBy as string,\n\t\tModifiedDate as timestamp,\n\t\tModifiedBy as string,\n\t\tPhaseID as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tisolationLevel: 'READ_UNCOMMITTED',\n\tformat: 'table') ~> PITSTOPS"
+		}
+	}
+}
