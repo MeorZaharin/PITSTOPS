@@ -1,0 +1,412 @@
+{
+	"name": "STEPSSqlServerTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkedService1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "SLNO",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Count",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TANO",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TASKID",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "TAPHASE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TASK",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TASKNOTE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DUR-HRS",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "OWNR",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CONTR",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ImageSLNO",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "Add1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Add2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Add3",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Add4",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Created",
+				"type": "datetime2",
+				"scale": 3
+			},
+			{
+				"name": "Createdby",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Modified",
+				"type": "datetime2",
+				"scale": 3
+			},
+			{
+				"name": "Modifiedby",
+				"type": "nvarchar"
+			},
+			{
+				"name": "WCSCode",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PlanStart",
+				"type": "datetime2",
+				"scale": 3
+			},
+			{
+				"name": "PlanFinish",
+				"type": "datetime2",
+				"scale": 3
+			},
+			{
+				"name": "ActStart",
+				"type": "datetime2",
+				"scale": 3
+			},
+			{
+				"name": "ActFinish",
+				"type": "datetime2",
+				"scale": 3
+			},
+			{
+				"name": "ScheduleID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RequestType",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PercentProgress",
+				"type": "decimal",
+				"precision": 28,
+				"scale": 6
+			},
+			{
+				"name": "IsSign1Allowed",
+				"type": "bit"
+			},
+			{
+				"name": "IsSign2Allowed",
+				"type": "bit"
+			},
+			{
+				"name": "IsSign3Allowed",
+				"type": "bit"
+			},
+			{
+				"name": "IsSign4Allowed",
+				"type": "bit"
+			},
+			{
+				"name": "IsSign5Allowed",
+				"type": "bit"
+			},
+			{
+				"name": "IsSign6Allowed",
+				"type": "bit"
+			},
+			{
+				"name": "IsSign7Allowed",
+				"type": "bit"
+			},
+			{
+				"name": "IsSign8Allowed",
+				"type": "bit"
+			},
+			{
+				"name": "IsSign9Allowed",
+				"type": "bit"
+			},
+			{
+				"name": "IsSign10Allowed",
+				"type": "bit"
+			},
+			{
+				"name": "Sign01",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sign02",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sign03",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sign04",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sign05",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sign06",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sign07",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sign08",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sign09",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sign10",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sign01Date",
+				"type": "datetime2",
+				"scale": 3
+			},
+			{
+				"name": "Sign02Date",
+				"type": "datetime2",
+				"scale": 3
+			},
+			{
+				"name": "Sign03Date",
+				"type": "datetime2",
+				"scale": 3
+			},
+			{
+				"name": "Sign04Date",
+				"type": "datetime2",
+				"scale": 3
+			},
+			{
+				"name": "Sign05Date",
+				"type": "datetime2",
+				"scale": 3
+			},
+			{
+				"name": "Sign06Date",
+				"type": "datetime2",
+				"scale": 3
+			},
+			{
+				"name": "Sign07Date",
+				"type": "datetime2",
+				"scale": 3
+			},
+			{
+				"name": "Sign08Date",
+				"type": "datetime2",
+				"scale": 3
+			},
+			{
+				"name": "Sign09Date",
+				"type": "datetime2",
+				"scale": 3
+			},
+			{
+				"name": "Sign10Date",
+				"type": "datetime2",
+				"scale": 3
+			},
+			{
+				"name": "RemarksSign1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RemarksSign2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RemarksSign3",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RemarksSign4",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RemarksSign5",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RemarksSign6",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RemarksSign7",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RemarksSign8",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RemarksSign9",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RemarksSign10",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CoordinateSign1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CoordinateSign2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CoordinateSign3",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CoordinateSign4",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CoordinateSign5",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CoordinateSign6",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CoordinateSign7",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CoordinateSign8",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CoordinateSign9",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CoordinateSign10",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Status",
+				"type": "nvarchar"
+			},
+			{
+				"name": "WCSTemplateID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Weightage",
+				"type": "decimal",
+				"precision": 28,
+				"scale": 6
+			},
+			{
+				"name": "LimtProg",
+				"type": "decimal",
+				"precision": 28,
+				"scale": 6
+			},
+			{
+				"name": "ForecastStart",
+				"type": "datetime2",
+				"scale": 3
+			},
+			{
+				"name": "ForecastEnd",
+				"type": "datetime2",
+				"scale": 3
+			},
+			{
+				"name": "ReworkCount",
+				"type": "decimal",
+				"precision": 28,
+				"scale": 6
+			},
+			{
+				"name": "ActTempID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ForecastLateStart",
+				"type": "datetime2",
+				"scale": 3
+			},
+			{
+				"name": "ForecastLateEnd",
+				"type": "datetime2",
+				"scale": 3
+			},
+			{
+				"name": "p6_task_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CalID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "AutoRel",
+				"type": "bit"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "04-TASK LIST"
+		}
+	}
+}
