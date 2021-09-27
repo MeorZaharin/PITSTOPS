@@ -1,0 +1,20 @@
+{
+	"name": "STEPS_DF",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "SqlServerTableSTEPS",
+						"type": "DatasetReference"
+					},
+					"name": "STEPSOnPrem"
+				}
+			],
+			"sinks": [],
+			"transformations": [],
+			"script": "source(output(\n\t\tSLNO as integer,\n\t\tCount as integer,\n\t\tTANO as string,\n\t\tTASKID as double,\n\t\tTAPHASE as string,\n\t\tTASK as string,\n\t\tTASKNOTE as string,\n\t\t{DUR-HRS} as double,\n\t\tOWNR as string,\n\t\tCONTR as string,\n\t\tImageSLNO as double,\n\t\tAdd1 as string,\n\t\tAdd2 as string,\n\t\tAdd3 as string,\n\t\tAdd4 as string,\n\t\tCreated as timestamp,\n\t\tCreatedby as string,\n\t\tModified as timestamp,\n\t\tModifiedby as string,\n\t\tWCSCode as string,\n\t\tPlanStart as timestamp,\n\t\tPlanFinish as timestamp,\n\t\tActStart as timestamp,\n\t\tActFinish as timestamp,\n\t\tScheduleID as string,\n\t\tRequestType as string,\n\t\tPercentProgress as decimal(28,6),\n\t\tIsSign1Allowed as boolean,\n\t\tIsSign2Allowed as boolean,\n\t\tIsSign3Allowed as boolean,\n\t\tIsSign4Allowed as boolean,\n\t\tIsSign5Allowed as boolean,\n\t\tIsSign6Allowed as boolean,\n\t\tIsSign7Allowed as boolean,\n\t\tIsSign8Allowed as boolean,\n\t\tIsSign9Allowed as boolean,\n\t\tIsSign10Allowed as boolean,\n\t\tSign01 as string,\n\t\tSign02 as string,\n\t\tSign03 as string,\n\t\tSign04 as string,\n\t\tSign05 as string,\n\t\tSign06 as string,\n\t\tSign07 as string,\n\t\tSign08 as string,\n\t\tSign09 as string,\n\t\tSign10 as string,\n\t\tSign01Date as timestamp,\n\t\tSign02Date as timestamp,\n\t\tSign03Date as timestamp,\n\t\tSign04Date as timestamp,\n\t\tSign05Date as timestamp,\n\t\tSign06Date as timestamp,\n\t\tSign07Date as timestamp,\n\t\tSign08Date as timestamp,\n\t\tSign09Date as timestamp,\n\t\tSign10Date as timestamp,\n\t\tRemarksSign1 as string,\n\t\tRemarksSign2 as string,\n\t\tRemarksSign3 as string,\n\t\tRemarksSign4 as string,\n\t\tRemarksSign5 as string,\n\t\tRemarksSign6 as string,\n\t\tRemarksSign7 as string,\n\t\tRemarksSign8 as string,\n\t\tRemarksSign9 as string,\n\t\tRemarksSign10 as string,\n\t\tCoordinateSign1 as string,\n\t\tCoordinateSign2 as string,\n\t\tCoordinateSign3 as string,\n\t\tCoordinateSign4 as string,\n\t\tCoordinateSign5 as string,\n\t\tCoordinateSign6 as string,\n\t\tCoordinateSign7 as string,\n\t\tCoordinateSign8 as string,\n\t\tCoordinateSign9 as string,\n\t\tCoordinateSign10 as string,\n\t\tStatus as string,\n\t\tWCSTemplateID as string,\n\t\tWeightage as decimal(28,6),\n\t\tLimtProg as decimal(28,6),\n\t\tForecastStart as timestamp,\n\t\tForecastEnd as timestamp,\n\t\tReworkCount as decimal(28,6),\n\t\tActTempID as string,\n\t\tForecastLateStart as timestamp,\n\t\tForecastLateEnd as timestamp,\n\t\tp6_task_id as integer,\n\t\tCalID as integer,\n\t\tAutoRel as boolean\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tisolationLevel: 'READ_UNCOMMITTED',\n\tformat: 'table') ~> STEPSOnPrem"
+		}
+	}
+}
