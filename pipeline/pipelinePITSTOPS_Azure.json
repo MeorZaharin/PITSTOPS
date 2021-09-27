@@ -1,9 +1,9 @@
 {
-	"name": "pipelineSTEPS",
+	"name": "pipelinePITSTOPS_Azure",
 	"properties": {
 		"activities": [
 			{
-				"name": "STEPS_OnPrem",
+				"name": "Data flow PITSTOPS",
 				"type": "ExecuteDataFlow",
 				"dependsOn": [],
 				"policy": {
@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataflow": {
-						"referenceName": "STEPSdataflow",
+						"referenceName": "PITSTOPS_DF",
 						"type": "DataFlowReference"
 					},
 					"compute": {
