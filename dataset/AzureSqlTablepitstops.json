@@ -111,7 +111,7 @@
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "TasklistTestADF"
+			"table": "_04_TASK_LIST"
 		}
 	}
 }
